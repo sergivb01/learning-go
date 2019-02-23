@@ -1,0 +1,31 @@
+# Deployment specific config
+deployment:
+  metadata:
+    name: sample-app
+    version: 1.0
+  type: single
+
+  # Define deployment ports
+  ports:
+    - name: nginx
+      hostPort: 80
+      containerPort: 80
+
+    - name: mysql
+      hostPort: 3306
+      containerPort: 3306
+
+  # Define environment variables for the deployment to use
+  env:
+    - DATABASE_PASSWORD
+
+# Define POD configuration for the deployment
+pod:
+  replicas: 5
+
+  # Health check configuration
+  health:
+    wait: 3
+    interval: 5
+    method: HTTP
+    path: /health
