@@ -32,14 +32,15 @@ func (c Client) doRequest(method, path string) ([]byte, error) {
 	if method == "" {
 		return nil, errors.New("method is nil")
 	}
+
 	req, err := http.NewRequest(method, c.baseURL+path, nil)
 	if err != nil {
 		return nil, err
 	}
+
 	if c.httpClient == nil {
 		return nil, errors.New("httpClient is nil")
 	}
-
 	resp, err := c.httpClient.Do(req)
 	if err != nil {
 		return nil, err
