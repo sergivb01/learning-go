@@ -10,6 +10,7 @@ Here is a list of the different exercices and projects I have already done.
   * Simple and badly coded TCP server. [Here](/04)
   * Simple TCP proxy. [Here](/05)
   * Checker for `sergi.dev` domain. [Here](/devchecker)
+  * Weird HTTP client to fetch Github Status (no reason at all for it). [Here](/06)
 
 ## Contributions
 Regardless that these are my exercices, I do accept contributions with better answers than mines. Thank you.
