@@ -48,8 +48,10 @@ func main() {
 
 	if ok := <-c; ok {
 		log.Printf("WE HAVE A MARK!!! It took: %s\n", time.Since(t))
+		os.Exit(1)
 	}
 	log.Println("it looks like I did an oopsie doopsie...")
+	os.Exit(0)
 }
 
 // checkForMark runs the request, checks for the response and listens for chans
