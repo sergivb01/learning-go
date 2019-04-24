@@ -1,0 +1,8 @@
+timeout: 5 # Timeout in seconds - time between requests
+baseURL: "https://xxxxxxxx.xxxxx/moodle/mod/assign/view.php?id=58942"
+
+cookies:
+  MoodleSessionusu139: "xxxxxxxxxxxxxxxxxxxxx"
+  MOODLEID1_usu139: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  agoraSchoolPRO": "iesxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  BIGipServerphp-agora-pool: "600000000.00000.0000"
